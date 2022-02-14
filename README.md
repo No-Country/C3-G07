@@ -1,6 +1,9 @@
 # C3-G07
 Repositorio oficial del grupo C3-G07
 
+Deploy en Netlify
+https://clinica-oftalmologica-g07.netlify.app/
+
 Pasos para trabajar con el repositorio: 
 
 #Instalar Git.
