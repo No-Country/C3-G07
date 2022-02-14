@@ -44,3 +44,32 @@ Pasos para trabajar con el repositorio:
 El siguiente tutorial es muy completo y resuelve cualquier duda al respecto.
 https://www.youtube.com/watch?v=HiXLkL42tMU
 
+#Comandos generales de GIT
+
+    Crear un repositorio local git init
+
+    "Contame cómo estamos" git status
+
+    Agregar a la "caja" el archivo ejemplo.html git add ejemplo.html
+
+    Agregar solo archivos terminados en .css git add *.css
+
+    Agregar TODOS los archivos disponibles git add .
+
+    Cerrar la caja y ponerle el mensaje VIM (Para salir :q) git commit -m "Envío mi archivo de ejemplo"
+
+    Agregar el remoto (Copiando código de GitHub) git remote add ...
+
+    Enviar por primera vez git push -u origin master
+
+    Enviar general git push
+
+    Traer cambios git pull
+
+    Devuele listado de branches y muestra la rama actual git branch
+
+    Crea un branch nuevo "cambio-color" y mueve el "puntero" a ese branch git checkout -b cambio-color
+
+    Mover "puntero" a branch NOMBRE git checkout NOMBRE
+
+    Eliminar rama (no puedo eliminar una rama si estoy parado en ella) git branch -D NOMBRE
