@@ -7,6 +7,32 @@
 body {
   background-color: cadetblue;
 }
+/*
+  -------------------------------------
+  logo
+  -------------------------------------
+*/
+h1 {
+  margin-bottom: 16px;
+}
+.logo {
+  width: 100%;
+  padding-top: 5px;
+  background-color: var(--white);
+}
+.logoimg {
+  text-indent:-99999px;
+  background-image: url("/C3-G07/front/src/assets/images/logo.png");
+  width: 230px;
+  height: 128px;
+  background-size: 100%;
+  display: block;
+  margin: 0 auto;
+  max-width: 2000px;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
 
 /*
   -------------------------------------
