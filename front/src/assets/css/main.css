@@ -22,7 +22,7 @@ h1 {
 }
 .logoimg {
   text-indent:-99999px;
-  background-image: url("src/assets/images/logo.png");
+  background-image: url("/C3-G07/front/src/assets/images/logo.png");
   width: 230px;
   height: 128px;
   background-size: 100%;
@@ -96,7 +96,7 @@ footer{
 
 
 .footer-distributed{
-	background-color: var(white);
+	background-color: var(--white);
 	box-sizing: border-box;
 	width: 100%;
 	text-align: left;
@@ -120,7 +120,7 @@ footer{
 
 .footer-distributed em{
 	color:  #333;
-	font: normal 36px 'Cookie', cursive;
+	font: normal 27px 'Cookie', cursive;
 	margin: 0;
 }
 
