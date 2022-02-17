@@ -2,6 +2,7 @@
   --whitesmoke: whitesmoke;
   --white: white;
   --gris: grey;
+  --celeste: #45BCD6;
 }
 
 body {
@@ -89,14 +90,12 @@ footer{
 
 @media (max-height:800px){
 	footer { position: static; }
-	header { 
-		padding-top:40px; 
-	}
+	header { padding-top:40px; }
 }
 
 
 .footer-distributed{
-	background-color: var(--white);
+	background-color: var(--celeste);
 	box-sizing: border-box;
 	width: 100%;
 	text-align: left;
@@ -120,7 +119,7 @@ footer{
 
 .footer-distributed em{
 	color:  #333;
-	font: normal 27px 'Cookie', cursive;
+	font: normal 27px , cursive;
 	margin: 0;
 }
 
@@ -128,10 +127,6 @@ footer{
 
 .footer-distributed .footer-left img{
 	width: 30%;
-}
-
-.footer-distributed em span{
-	color:  var(--gris);
 }
 
 /* Footer links */
@@ -195,7 +190,7 @@ footer{
 }
 
 .footer-distributed .footer-center p a{
-	color:  var(--gris);
+	color: #333;
 	text-decoration: none;;
 }
 
@@ -208,7 +203,7 @@ footer{
 
 .footer-distributed .footer-company-about{
 	line-height: 20px;
-	color:  var(--gris);
+	color:  #333;
 	font-size: 13px;
 	font-weight: normal;
 	margin: 0;
@@ -246,7 +241,7 @@ footer{
 	height: 33px;
 }
 .foot-icon:hover{
-	background-color: var(--whitesmoke);
+	background-color: var(--celeste);
 	cursor: pointer;
 	transform: scale(1.1);
     box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
