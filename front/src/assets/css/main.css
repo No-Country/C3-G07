@@ -127,9 +127,9 @@ body {
 }
 
 .btn--turno:hover {
-	background-color: var(--color-base);
-	color: var(--color-purple-blue);
-	transition: 0.5s ease-in-out;
+  background-color: var(--color-base);
+  color: var(--color-purple-blue);
+  transition: 0.5s ease-in-out;
 }
 
 /* Main component */
@@ -160,4 +160,29 @@ body {
 .hero__title,
 .hero__paragraph {
   color: var(--color-base);
+}
+
+/* Emergency section */
+
+.emergency {
+  margin-top: 0;
+  padding: 1rem;
+  background-color: var(--color-purple-blue);
+  text-align: center;
+}
+
+.emergency__title,
+.emergency__paragraph {
+  font: var(--font-400-regular);
+  color: var(--color-base);
+}
+
+.emergency__title {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.emergency__paragraph {
+  margin-top: 0;
+  font-size: 2rem;
 }
