@@ -66,7 +66,7 @@ body {
   top: -100%;
   bottom: 476px;
   left: 20px;
-  right:140px;
+  right: 140px;
   border-radius: 4px;
   background-color: var(--color-base);
   transition: all 0.5s;
@@ -112,10 +112,17 @@ body {
   height: 100%;
 }
 
-.header__button {
+.btn {
   padding: 0.7rem;
   border: none;
   border-radius: 4px;
   background-color: var(--color-base);
   color: var(--color-purple-light-blue);
+  cursor: pointer;
+}
+
+/* Main component */
+.main {
+  width: 100vw;
+  height: 100vh;
 }

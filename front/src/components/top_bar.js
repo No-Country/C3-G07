@@ -39,7 +39,7 @@ function topBar(btnToggle) {
         <img class="linked__logo" loading="lazy" src="./src/assets/images/Logo.png" alt="logo clínica pérez" />
     </a>
 
-    <button class="header__button" type="submit">Ingresar</button>
+    <button class="btn" type="submit">Ingresar</button>
   </div>  
 `;
 
