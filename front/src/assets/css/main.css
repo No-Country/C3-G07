@@ -3,8 +3,7 @@
 :root {
   /* colors */
   --color-normal-blue: #42a0d6;
-  --color-purple-blue: #4c49e5;
-  --color-purple-light-blue: #605dec;
+  --color-purple-blue: #605dec;
   --color-light-gray: #d2d2d2;
   --color-base: #ffffff;
 
@@ -94,7 +93,7 @@ body {
 
 .menu__item:hover {
   color: var(--color-base);
-  background-color: var(--color-purple-light-blue);
+  background-color: var(--color-purple-blue);
 }
 
 .menu__link {
@@ -117,12 +116,48 @@ body {
   border: none;
   border-radius: 4px;
   background-color: var(--color-base);
-  color: var(--color-purple-light-blue);
+  color: var(--color-purple-blue);
   cursor: pointer;
 }
 
+.btn--turno {
+  width: 130px;
+  background-color: var(--color-purple-blue);
+  color: var(--color-base);
+}
+
+.btn--turno:hover {
+	background-color: var(--color-base);
+	color: var(--color-purple-blue);
+	transition: 0.5s ease-in-out;
+}
+
 /* Main component */
+
 .main {
   width: 100vw;
   height: 100vh;
+}
+
+/* Hero section */
+
+.hero {
+  width: 100vw;
+  height: 290px;
+  margin-top: -90px;
+  padding-top: 90px;
+  text-align: center;
+  background: url("../images/banner.png") no-repeat right top;
+  background-size: cover;
+}
+
+.hero__title {
+  padding: 0;
+  font: var(--font-400-regular);
+  font-size: 1.8rem;
+}
+
+.hero__title,
+.hero__paragraph {
+  color: var(--color-base);
 }
