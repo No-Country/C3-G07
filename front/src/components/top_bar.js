@@ -2,34 +2,56 @@ const d = document;
 
 /**
  * Top bar component
- * @returns {Node} nav element
+ * @param {btnToggle} string Hamburger menu selector
+ * @returns {Node} Top bar component
  */
-function topBar() {
+function topBar(btnToggle) {
   const $root = d.getElementById("root");
-  const $topBar = d.createElement("nav");
+  const $topBar = d.createElement("header");
 
-  $topBar.classList.add("navigation");
+  $topBar.classList.add("header");
 
   /* component */
   $topBar.innerHTML = `
-    <ul class="main-nav" id="nav">
-        <li class="nav-item">
-            <a class="nav-item_link" routerLink="#">Home</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-item_link" routerLink="#">Institucional</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-item_link" routerLink="#">Especialidades</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-item_link" routerLink="#">Profesionales</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-item_link" routerLink="#">Contacto</a>
-        </li>
-    </ul>
+  <div class="header__container">
+    <div class="header__toggle" id="toggle">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <nav class="menu">
+        <ul class="menu__list">
+            <li class="menu__item">
+                <a class="menu__link" href="#" rel="noopener noreferrer">Nosotros</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="#" rel="noopener noreferrer">Institucional</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="#" rel="noopener noreferrer">Especialidades</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="#" rel="noopener noreferrer">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+
+    <a class="linked" href="index.html">
+        <img class="linked__logo" loading="lazy" src="./src/assets/images/Logo.png" alt="logo clínica pérez" />
+    </a>
+
+    <button class="header__button" type="submit">Ingresar</button>
+  </div>  
 `;
+
+  d.addEventListener("click", (e) => {
+    if (e.target.matches(btnToggle) || e.target.matches(`${btnToggle} *`)) {
+      d.querySelector(".menu").classList.toggle("menu--active");
+      d.querySelector(".header__toggle i").classList.toggle("fa-times");
+    } else {
+      d.querySelector(".menu").classList.remove("menu--active");
+      d.querySelector(".header__toggle i").classList.remove("fa-times");
+    }
+  });
 
   return $root.appendChild($topBar);
 }

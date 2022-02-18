@@ -4,5 +4,5 @@ const d = document;
 
 /* render components */
 d.addEventListener("DOMContentLoaded", (e) => {
-  topBar();
+  topBar("#toggle");
 });
