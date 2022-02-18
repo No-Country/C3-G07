@@ -160,6 +160,9 @@ body {
 .hero__title,
 .hero__paragraph {
   color: var(--color-base);
+  max-width: 95%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
 }
 
 /* Emergency section */
