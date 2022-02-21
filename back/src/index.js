@@ -2,14 +2,12 @@ const express = require('express')
 const morgan = require('morgan')
 require('dotenv').config()
 const path = require('path')
-const exphbs = require('express-handlebars')
 
 // initializations
 const app = express()
 
 //middleware
 app.use(morgan('dev'))
-app.use(express.static(__dirname + '/front'))
 app.use(express.urlencoded({ extended: false }))
 app.use(express.json())
 
