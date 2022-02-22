@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
 
 :root {
-<<<<<<< HEAD
   /* colors */
   --color-normal-blue: #42a0d6;
   --color-purple-blue: #605dec;
@@ -11,12 +10,6 @@
   /* typography */
   --font-400-regular: normal 400 16px "Outfit", sans-serif;
   --font-700-bold: normal 700 16px "Outfit", sans-serif;
-=======
-  --whitesmoke: whitesmoke;
-  --white: white;
-  --gris: grey;
-  --celeste: #45BCD6;
->>>>>>> origin/develop
 }
 
 html {
@@ -135,33 +128,16 @@ body {
   color: var(--color-base);
 }
 
-<<<<<<< HEAD
 .btn--turno:hover {
   background-color: var(--color-base);
   color: var(--color-purple-blue);
   transition: 0.5s ease-in-out;
-=======
-@media (max-height:800px){
-	footer { position: static; }
-	header { padding-top:40px; }
->>>>>>> origin/develop
 }
 
 /* Main component */
 
-<<<<<<< HEAD
 .main {
   width: 100vw;
-=======
-.footer-distributed{
-	background-color: var(--celeste);
-	box-sizing: border-box;
-	width: 100%;
-	text-align: left;
-	font: bold 16px sans-serif;
-	padding: 10px 10px 20px 10px;
-	margin-top: 10px;
->>>>>>> origin/develop
 }
 
 /* Hero section */
@@ -189,19 +165,12 @@ body {
   margin-right: 2.5%;
 }
 
-<<<<<<< HEAD
 /* Emergency section */
 
 .emergency {
   padding: 1rem;
   background-color: var(--color-purple-blue);
   text-align: center;
-=======
-.footer-distributed em{
-	color:  #333;
-	font: normal 27px , cursive;
-	margin: 0;
->>>>>>> origin/develop
 }
 
 .emergency__title,
@@ -215,16 +184,12 @@ body {
   margin-bottom: 10px;
 }
 
-<<<<<<< HEAD
 .emergency__paragraph {
   margin-top: 0;
   font-size: 2rem;
 }
 
 /* Specialities section */
-=======
-/* Footer links */
->>>>>>> origin/develop
 
 .specialities {
   padding: 1rem;
@@ -286,15 +251,9 @@ body {
   font-size: 0.9rem;
 }
 
-<<<<<<< HEAD
 .location__map iframe {
   width: 150px;
   height: 200px;
-=======
-.footer-distributed .footer-center p a{
-	color: #333;
-	text-decoration: none;;
->>>>>>> origin/develop
 }
 
 /* Writer section */
@@ -311,21 +270,12 @@ body {
   color: var(--color-base);
 }
 
-<<<<<<< HEAD
 .writer__form {
   max-width: 95%;
   margin: 0 5%;
   display: flex;
   flex-direction: column;
   gap: 15px;
-=======
-.footer-distributed .footer-company-about{
-	line-height: 20px;
-	color:  #333;
-	font-size: 13px;
-	font-weight: normal;
-	margin: 0;
->>>>>>> origin/develop
 }
 
 .writer__form input {
@@ -363,7 +313,6 @@ body {
   font: var(--font-400-regular);
   font-size: 1.6rem;
 }
-<<<<<<< HEAD
 
 .contact__card {
   max-width: 95%;
@@ -371,14 +320,6 @@ body {
   height: 250px;
   background-color: var(--color-base);
   border-radius: 20px;
-=======
-.foot-icon:hover{
-	background-color: var(--celeste);
-	cursor: pointer;
-	transform: scale(1.1);
-    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
-    transition: all 0.5s ease-in-out;
->>>>>>> origin/develop
 }
 
 .contact__card h3 {
@@ -417,8 +358,8 @@ body {
 }
 
 .footer img {
-  width: 116px;
-  height: 56;
+  width: 70px;
+  height: 40px;
 }
 
 .footer .addres {
