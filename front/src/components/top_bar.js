@@ -2,36 +2,20 @@ const d = document;
 
 /**
  * Top bar component
- * @returns {Node} nav element
+ * @param {btnToggle} string Hamburger menu selector
+ * @returns {void}
  */
-function topBar() {
-  const $root = d.getElementById("root");
-  const $topBar = d.createElement("nav");
-
-  $topBar.classList.add("navigation");
-
-  /* component */
-  $topBar.innerHTML = `
-    <ul class="main-nav" id="nav">
-        <li class="nav-item">
-            <a class="nav-item_link" routerLink="#">Home</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-item_link" routerLink="#">Institucional</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-item_link" routerLink="#">Especialidades</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-item_link" routerLink="#">Profesionales</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-item_link" routerLink="#">Contacto</a>
-        </li>
-    </ul>
-`;
-
-  return $root.appendChild($topBar);
+function topBar(btnToggle) {
+  d.addEventListener("click", (e) => {
+    /* button toggle */
+    if (e.target.matches(btnToggle) || e.target.matches(`${btnToggle} *`)) {
+      d.querySelector(".menu").classList.toggle("menu--active");
+      d.querySelector(".header__toggle i").classList.toggle("fa-times");
+    } else {
+      d.querySelector(".menu").classList.remove("menu--active");
+      d.querySelector(".header__toggle i").classList.remove("fa-times");
+    }
+  });
 }
 
 export default topBar;
