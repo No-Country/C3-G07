@@ -5,23 +5,17 @@ const path = require('path')
 
 // initializations
 const app = express()
+app.set('view engine', 'ejs')
 
 //middleware
 app.use(morgan('dev'))
 app.use(express.urlencoded({ extended: false }))
 app.use(express.json())
 
-//Public
-app.use(express.static(path.join(__dirname, 'public')))
-
-//Global Variables
-
 //Routes
-app.use(require('./routes'))
-app.use(require('./routes/authentication'))
-app.use('/links', require('./routes/links'))
+app.use('/', require('./routes'))
 
 //starting the server
-app.listen(app.get('port'), () => {
-  console.log('Listeng on port', app.get('port'))
+app.listen(8080, () => {
+  console.log('Listeng on port http://localhost:8080')
 })
