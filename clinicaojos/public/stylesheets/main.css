@@ -1,0 +1,371 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+:root {
+  /* colors */
+  --color-normal-blue: #42a0d6;
+  --color-purple-blue: #605dec;
+  --color-light-gray: #d2d2d2;
+  --color-base: #ffffff;
+
+  /* typography */
+  --font-400-regular: normal 400 16px "Outfit", sans-serif;
+  --font-700-bold: normal 700 16px "Outfit", sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font: var(--font-400-regular);
+  margin-top: 70px;
+}
+
+/* Header component */
+
+.header {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background: linear-gradient(
+    to bottom,
+    var(--color-normal-blue),
+    var(--color-light-gray)
+  );
+}
+
+.header__container {
+  max-width: 95%;
+  margin: 0 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__toggle i {
+  font-size: 34px;
+  width: 34px;
+  cursor: pointer;
+}
+
+.menu {
+  height: 130px;
+  position: fixed;
+  top: -100%;
+  bottom: 476px;
+  left: 20px;
+  right: 140px;
+  border-radius: 4px;
+  background-color: var(--color-base);
+  transition: all 0.5s;
+}
+
+.menu--active {
+  top: 54px;
+}
+
+.menu__list {
+  margin: 0;
+  padding: 0 20px;
+  list-style: none;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.menu__item {
+  margin: 0;
+  padding: 3px;
+  border-radius: 4px;
+}
+
+.menu__item:hover {
+  color: var(--color-base);
+  background-color: var(--color-purple-blue);
+}
+
+.menu__link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.linked {
+  margin-left: 53px;
+  width: 126px;
+  height: 71px;
+}
+
+.linked__logo {
+  width: 100%;
+  height: 100%;
+}
+
+.btn {
+  padding: 0.7rem;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--color-base);
+  color: var(--color-purple-blue);
+  cursor: pointer;
+}
+
+.btn--turno {
+  width: 130px;
+  background-color: var(--color-purple-blue);
+  color: var(--color-base);
+}
+
+.btn--turno:hover {
+  background-color: var(--color-base);
+  color: var(--color-purple-blue);
+  transition: 0.5s ease-in-out;
+}
+
+/* Main component */
+
+.main {
+  width: 100vw;
+}
+
+/* Hero section */
+
+.hero {
+  width: 100vw;
+  height: 14rem;
+  padding-top: 1.5rem;
+  text-align: center;
+  background: url("../images/banner.png") no-repeat right top;
+  background-size: cover;
+}
+
+.hero__title {
+  padding: 0;
+  font: var(--font-400-regular);
+  font-size: 1.6rem;
+}
+
+.hero__title,
+.hero__paragraph {
+  color: var(--color-base);
+  max-width: 95%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+
+/* Emergency section */
+
+.emergency {
+  padding: 1rem;
+  background-color: var(--color-purple-blue);
+  text-align: center;
+}
+
+.emergency__title,
+.emergency__paragraph {
+  font: var(--font-400-regular);
+  color: var(--color-base);
+}
+
+.emergency__title {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.emergency__paragraph {
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+/* Specialities section */
+
+.specialities {
+  padding: 1rem;
+  background-color: var(--color-normal-blue);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.specialities__title {
+  font: var(--font-400-regular);
+  font-size: 1.6rem;
+  color: var(--color-base);
+}
+
+.specialities__list {
+  max-width: 95%;
+  margin: 8px 5%;
+  padding: 0.6rem;
+  color: gray;
+  background-color: var(--color-base);
+  border-radius: 6px;
+  border: none;
+}
+
+/* Location section */
+
+.location {
+  padding: 1rem;
+  background-color: var(--color-base);
+  text-align: center;
+}
+
+.location__title {
+  font: var(--font-400-regular);
+  font-size: 1.6rem;
+}
+
+.location__container {
+  display: flex;
+  max-width: 95%;
+  margin: 0 5%;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.location__description h3,
+.location__description p {
+  font: var(--font-400-regular);
+  text-align: start;
+}
+
+.location__description h3 {
+  font-size: 1.2rem;
+}
+
+.location__description p {
+  font-size: 0.9rem;
+}
+
+.location__map iframe {
+  width: 150px;
+  height: 200px;
+}
+
+/* Writer section */
+
+.writer {
+  padding: 1rem;
+  background-color: var(--color-purple-blue);
+  text-align: center;
+}
+
+.writer__title {
+  font: var(--font-400-regular);
+  font-size: 1.6rem;
+  color: var(--color-base);
+}
+
+.writer__form {
+  max-width: 95%;
+  margin: 0 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.writer__form input {
+  padding: 0.7rem;
+  border-radius: 4px;
+  border: none;
+}
+
+.writer__form [type="submit"] {
+  padding: 0.6rem;
+  width: 100px;
+  margin: 0 auto;
+  border: none;
+  background-color: var(--color-normal-blue);
+  color: var(--color-base);
+  cursor: pointer;
+}
+
+.writer__form [type="submit"]:hover {
+  background-color: var(--color-base);
+  color: var(--color-purple-blue);
+  transition: 0.3s ease-in-out;
+}
+
+/* Contact section */
+
+.contact {
+  padding: 1rem;
+  text-align: center;
+  background-color: #f1f1f1;
+  color: var(--color-purple-blue);
+}
+
+.contact__title {
+  font: var(--font-400-regular);
+  font-size: 1.6rem;
+}
+
+.contact__card {
+  max-width: 95%;
+  margin: 0 5%;
+  height: 250px;
+  background-color: var(--color-base);
+  border-radius: 20px;
+}
+
+.contact__card h3 {
+  padding: 0.9rem 0;
+  margin: 0;
+}
+
+.contact__card p {
+  padding: 0;
+  margin: 0;
+}
+
+.contact__social {
+  max-width: 95%;
+  margin: 10px 5%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact__social i {
+  font-size: 34px;
+  width: 34px;
+}
+
+/* Footer component */
+
+.footer {
+  background-color: #f1f1f1;
+}
+
+.footer__container {
+  max-width: 95%;
+  margin: 0 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer img {
+  width: 110px;
+  height: 50px;
+}
+
+.footer .addres {
+  font: var(--font-400-regular);
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
