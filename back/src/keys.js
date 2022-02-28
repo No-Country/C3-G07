@@ -2,7 +2,7 @@ module.exports = {
   database: {
     host: 'localhost',
     user: 'root',
-    password: '',
-    database: 'database_C3_07'
+    password: '1234',
+    database: 'clinica_oftalmologica'
   }
 }
