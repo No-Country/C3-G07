@@ -9,7 +9,7 @@ Repositorio oficial del grupo C3-G07
     App de sistema de turnos de una clínica médica oftalmológica.
 
 	-Stack/Tecnologías
-    Mysql workbench, Express, Mysql, HTML, CSS, Javascript, Vanilla JS.
+    Mysql workbench, Express, Mysql, HTML, CSS, Javascript, Xampp, Vanilla JS.
 
 	-Roles de cada integrante
     AgustinPipicello UX/UI
