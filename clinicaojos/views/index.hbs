@@ -64,17 +64,15 @@
 
       <section class="specialities" id="specialities">
         <h2 class="specialities__title">Nuestras especialidades</h2>
-
         <UL
           class="specialities__list"
           name="specialitiesSurgery"
           id="specialitiesSurgery"
         >
           {{#each especialidad}}
-          <li value="" selected disabled>{{nombre_especialidad}}</li>
+          <li value="" selected disabled><a class="button">{{nombre_especialidad}}</a></li>
           {{/each}}
         </UL>
-        
       </section>
 
       <section class="location" id="location">
