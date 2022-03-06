@@ -18,7 +18,7 @@
     <!-- seo site property -->
 
     <link rel="stylesheet" href="src/assets/css/normalize.css" />
-    <link rel="stylesheet" href="src/assets/css/login.css" />
+    <link rel="stylesheet" href="src/assets/css/reserva.css" />
     <!-- styles -->
 
     <script src="https://kit.fontawesome.com/c207e84ca8.js" crossorigin="anonymous"></script>
@@ -57,19 +57,52 @@
         </div>
     </header>
 
-    <div class="cont">
-        <div class="form">
-            <form action="">
-                <h1>Iniciar sesión</h1>
-                <input type="text" class="user" placeholder="Usuario, documento o mail" />
-                <input type="password" class="pass" placeholder="Contraseña" />
-                <button class="login">Ingresar</button>
-                <p>¿Olvidaste tu contraseña? Recuperala acá</p>
-                <p class="divider">o</p>
-            <button class="reg">Registrarse</button>
-            </form>
-        </div>
-    </div>
+    <section class="reserva" id="reserva">
+        <h2 class="titulo_reserva">Reserve su turno</h2>
+
+        <select
+          class="lista_reserva"
+          name="cobertura"
+          id="cobertura"
+        >
+          <option value="" selected disabled>Cobertura</option>
+        </select>
+
+        <select
+          class="lista_reserva"
+          name="especialidad"
+          id="especialidad"
+        >
+          <option value="" selected disabled>Especialidad</option>
+        </select>
+
+        <select
+          class="lista_reserva"
+          name="profesional"
+          id="profesional"
+        >
+          <option value="" selected disabled>Profesional</option>
+        </select>
+
+        <select
+          class="lista_reserva"
+          name="fecha"
+          id="fecha"
+        >
+          <option value="" selected disabled>Fecha</option>
+        </select>
+
+        <select
+          class="lista_reserva"
+          name="horario"
+          id="horario"
+        >
+          <option value="" selected disabled>Horario</option>
+        </select>
+
+        <button class="turno">Pedir turno</button>
+      </section>
+
 
     <div class="separador"></div>
 
