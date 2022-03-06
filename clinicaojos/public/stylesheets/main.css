@@ -120,6 +120,7 @@ body {
   background-color: var(--color-base);
   color: var(--color-purple-blue);
   cursor: pointer;
+  text-decoration: none;
 }
 
 .btn--turno {

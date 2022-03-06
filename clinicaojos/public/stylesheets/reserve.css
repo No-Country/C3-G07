@@ -1,0 +1,40 @@
+.userlogin__logo {
+    margin-top: 5px;
+    justify-self: center;
+}
+
+.textusuariolog{
+    justify-self: center;
+   color:white;  
+}
+
+.tituloreserva{    
+    color: white;
+}
+
+.comboboxformreserv_list{
+    width: 100%;
+    margin-bottom: 20px;;
+    color: gray;
+    background-color: var(--color-base);
+    border-radius: 6px;
+    border: none;
+}
+
+.reqturn{
+    background-color: #605DEC;
+}
+
+.contform{
+    background-color: rgba(0, 0,0 ,0);   
+}
+
+
+body{
+    /* background: #45BCD6; */
+    background: radial-gradient(100% 100% at 50% 0%, #45BCD6 19.27%, rgba(255, 255, 255, 0.2485) 100%);
+
+
+}
+
+
