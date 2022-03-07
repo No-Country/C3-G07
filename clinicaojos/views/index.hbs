@@ -7,29 +7,29 @@
         <nav class="menu">
           <ul class="menu__list">
             <li class="menu__item">
-              <a class="menu__link" href="#" rel="noopener noreferrer">
-                Nosotros
+              <a class="menu__link" href="/" rel="noopener noreferrer">
+                Home
               </a>
             </li>
-            <li class="menu__item">
+            {{!-- <li class="menu__item">
               <a class="menu__link" href="#" rel="noopener noreferrer">
                 Institucional
               </a>
-            </li>
+            </li> --}}
             <li class="menu__item">
-              <a class="menu__link" href="#" rel="noopener noreferrer">
+              <a class="menu__link" href="#specialities" rel="noopener noreferrer">
                 Especialidades
               </a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#" rel="noopener noreferrer">
+              <a class="menu__link" href="#contact" rel="noopener noreferrer">
                 Contacto
               </a>
             </li>
           </ul>
         </nav>
 
-        <a class="linked" href="index.html">
+        <a class="linked">
           <img
             class="linked__logo"
             loading="lazy"
@@ -38,7 +38,7 @@
           />
         </a>
 
-        <button class="btn" type="submit">Ingresar</button>
+        <a class="btn" type="button" href="/login">Ingresar</a>
       </div>
     </header>
 
@@ -52,9 +52,9 @@
           equipamiento oftalmológico
         </p>
 
-        <button class="btn btn--turno" id="btnTurno" type="submit">
+        <a class="btn btn--turno" id="btnTurno" type="submit" href="turn">
           Pedir turno
-        </button>
+        </a>
       </section>
 
       <section class="emergency" id="emergency">
@@ -64,17 +64,15 @@
 
       <section class="specialities" id="specialities">
         <h2 class="specialities__title">Nuestras especialidades</h2>
-
         <UL
           class="specialities__list"
           name="specialitiesSurgery"
           id="specialitiesSurgery"
         >
           {{#each especialidad}}
-          <li value="" selected disabled>{{nombre_especialidad}}</li>
+          <li value="" selected disabled><a class="button">{{nombre_especialidad}}</a></li>
           {{/each}}
         </UL>
-        
       </section>
 
       <section class="location" id="location">
@@ -153,7 +151,7 @@
       <div class="footer__container">
         <img
           loading="lazy"
-          src="src/assets/images/Branding_logo-Footer.svg"
+          src="/images/Branding_logo-Footer.svg"
           alt="logo clínica pérez"
         />
 
