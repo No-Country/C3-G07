@@ -10,10 +10,10 @@ The result is a simple, intuitive and useful website for patients to book their 
 #### Images
 
 
-### :tw-1f680:Stack/Tecnologías
-####:tw-1f3a8: Diseño UX 
+### :tw-1f680: Stack/Tecnologías
+#### :tw-1f3a8: Diseño UX 
 Figma
-#### :tw-1f4bb: Front-end   
+####  :tw-1f4bb:  Front-end   
 Vainilla Js
 Express
 Xampp
