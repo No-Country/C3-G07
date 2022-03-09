@@ -10,14 +10,14 @@ The result is a simple, intuitive and useful website for patients to book their 
 #### Images
 
 
-### :tw-1f680: Stack/Tecnologías
-#### :tw-1f3a8: Diseño UX 
+###  Stack/Tecnologías
+#### ![graphic-designer](https://user-images.githubusercontent.com/98899407/157447046-5b578379-25b7-4ff0-8b2e-09ceb23206c6.png)  Diseño UX 
 Figma
-####  :tw-1f4bb:  Front-end   
+####  ![programming](https://user-images.githubusercontent.com/98899407/157447064-ae74daff-5819-46e8-9303-be05060cbae6.png)  Front-end   
 Vainilla Js
 Express
 Xampp
-#### :tw-1f4ca: Back-end   
+#### ![software](https://user-images.githubusercontent.com/98899407/157447094-f01b0a74-ba62-455f-a703-3ecad3a3032d.png)  Back-end   
 MySQL 
 MySQL Workbench
 
