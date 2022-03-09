@@ -7,7 +7,7 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var loginRouter = require('./routes/login');
 var reserveRouter = require('./routes/reserve');
-//var reservaexitosaRouter = require('./routes/reservaesxitosa');
+var reservaexitosaRouter = require('./routes/reservaexitosa');
 //var usersRouter = require('./routes/users');
 
 require('./DBmysql');
@@ -27,7 +27,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/login', loginRouter);
 app.use('/reserve', reserveRouter);
-//app.use('/reservaexitosa', reservaexitosaRouter);
+app.use('/reservaexitosa', reservaexitosaRouter);
 //app.use('/users', usersRouter);
 
 // catch 404 and forward to error handler

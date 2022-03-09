@@ -1,79 +1,79 @@
+    <head>
+      <link rel="stylesheet" href="/stylesheets/login.css"/>
+      <link rel="stylesheet" href="/stylesheets/reservaexitosa.css"/>
 
-<body>
-  <header class="header">
-  <div class="header__container">
-    <div class="header__toggle" id="toggle">
-      <i class="fas fa-bars"></i>
+    </head>
+
+    <header class="header">
+        <div class="header__container">
+            <div class="header__toggle" id="toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a class="menu__link" href="/" rel="noopener noreferrer">Nosotros</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#" rel="noopener noreferrer">Institucional</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#" rel="noopener noreferrer">Especialidades</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#" rel="noopener noreferrer">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <a class="linked">
+                <img class="linked__logo" loading="lazy" src="/images/Logo.png" alt="logo clínica pérez" />
+            </a>
+            <div class="linked">
+             <a class="linked">
+                <img class="userlogin__logo" loading="lazy" src="/images/userloged.svg" alt="icono login" />
+                
+            </a>
+            {{#each usuariol}}
+            <p class="textusuariolog">{{nombre_paciente}}</p>
+            {{/each}}
+            </div>
+        </div>
+    </header>
+
+    <div class="cont contform">
+        <div class="form formdiv ">
+            <div>
+                <h1 class="tituloreserva">!Su turno ha sido reservado con éxito!</h1>
+                <select
+                    class="comboboxformreserv_list"
+                    name="cobertura"
+                    id="specialitiesSurgery"
+                >
+                    <option value="">Particular</option>
+                    <option value="">Seguro Privado</option>
+                    <option value="" disabled selected hidden>Cobertura...</option>
+                </select>
+                <label>Profesional: </label>
+                <input class="rptaturno" value="toto" disabled >
+
+                <button class="login reqturn" type="submit">volver a home</button>
+            </div>
+        </div>
     </div>
 
-    <nav class="menu">
-      <ul class="menu__list">
-        <li class="menu__item">
-          <a class="menu__link" href="#" rel="noopener noreferrer">Nosotros</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#" rel="noopener noreferrer"
-            >Institucional</a
-          >
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#" rel="noopener noreferrer"
-            >Especialidades</a
-          >
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#" rel="noopener noreferrer">Contacto</a>
-        </li>
-      </ul>
-    </nav>
-
-    <a class="linked" href="index.html">
-      <img
-        class="linked__logo"
-        loading="lazy"
-        src="./src/assets/images/Logo.png"
-        alt="logo clínica pérez"
-      />
-    </a>
-
-    <button class="btn" type="submit">Usuario</button>
-  </div>
-</header>
-<br><br><br><br>
-<form class="form">
-  <div class="form_container">
-
-    <h2>¡Su turno ha sido reservado con exito!</h2>
-
-    <div class="form_container_sup">
-      <div class="form_container_inf">Profesional</div>
-      <div class="form_container_inf">Especialidad</div>
-      <div class="form_container_inf">Fecha</div>
-      <div class="form_container_inf">Horario</div>
-      <div class="form_container_inf">Direccion</div>
-      <div class="form_container_inf">Observaciones</div>
-    </div>
-    
-    <input type="submit" value="Volver a home" class="form_cta">
-  </div>
-</form>
-
-<footer class="footer">
-  <div class="footer__container">
-    <img
-      loading="lazy"
-      src="src/assets/images/Branding_logo-Footer.svg"
-      alt="logo clínica pérez"
-    />
-
-    <div class="addres">
-      <i class="fas fa-map-marker-alt"></i>
-      <p>Avenida La Plata 188, Caba.</p>
-    </div>
-  </div>
-</footer>
-
-
-<script src="src/index.js" type="module"></script>
-
-</body>
+    <footer class="footer">
+        <div class="footer__container">
+          <img
+            loading="lazy"
+            src="/images/Branding_logo-Footer.svg"
+            alt="logo clínica pérez"
+          />
+  
+          <div class="addres">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>Avenida La Plata 188, Caba.</p>
+          </div>
+        </div>
+    </footer>
