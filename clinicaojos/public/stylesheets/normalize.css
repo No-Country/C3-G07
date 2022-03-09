@@ -348,3 +348,8 @@
     display: none;
   }
   
+/*Auxiliares*/
+  .invisible{
+    visibility: hidden;
+    /* display: none; */
+  }

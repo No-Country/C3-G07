@@ -44,49 +44,62 @@
 
     <div class="cont contform">
         <div class="form formdiv ">
-            <form action="login" method="post">
+            <form action="/reserve/validacion" method="post">
+                
+                <div>
+                 {{#each usuariol}}
+                <input class="invisible" type="hidden" name="idcliente" value={{id_cliente}} >
+                {{/each}}
+                </div>
+
                 <h1 class="tituloreserva">Reserve su turno</h1>
+                
                 <select
                     class="comboboxformreserv_list"
                     name="cobertura"
                     id="specialitiesSurgery"
+                    required
                 >
-                    <option value="">Particular</option>
-                    <option value="">Seguro Privado</option>
-                    <option value="" disabled selected hidden>Cobertura...</option>
+                    <option value="" disabled selected hidden>Cobertura...</option>                
+                    <option value="Particular">Particular</option>
+                    <option value="Seguro Privado">Seguro Privado</option>
                 </select>
 
                 <select
                     class="comboboxformreserv_list"
                     name="especialidad"
                     id="specialitiesSurgery"
+                    required
                 >
+                    <option value="" disabled selected hidden>Especialidad...</option>                    
                     {{#each especialidadesl}}
-                    <option value="">{{nombre_especialidad}}</option>
+                    <option value="{{id_especialidad}}">{{nombre_especialidad}}</option>
                     {{/each}}
-                    <option value="" disabled selected hidden>Especialidad...</option>
                 </select>
 
                 <select
                     class="comboboxformreserv_list"
                     name="profesional"
                     id="specialitiesSurgery"
+                    required
                 >
+                    <option value="" disabled selected hidden>Profesional...</option>                 
                     {{#each doctoresl}}
-                    <option value="">{{nombre_apellido_medico}}</option>
+                    <option value="{{id_medicos}}">{{nombre_apellido_medico}}</option>
                     {{/each}}
-                    <option value="" disabled selected hidden>Profesional...</option>
                 </select>
 
                 <input class="comboboxformreserv_list" type="date" id="start" name="fecha"
                     value="fecha"
-                    min="2018-01-01" max="2023-12-31" placeholder="fecha">
+                    min="2018-01-01" max="2023-12-31" placeholder="fecha" required>
 
                 <select
                     class="comboboxformreserv_list"
-                    name="specialitiesSurgery"
+                    name="hora"
                     id="specialitiesSurgery"
+                    required
                 >
+                    <option value="" disabled selected hidden>Hora...</option>                    
                     <option value="">9:00</option>
                     <option value="">10:00</option>
                     <option value="">11:00</option>
@@ -94,9 +107,7 @@
                     <option value="">13:00</option>
                     <option value="">14:00</option>
                     <option value="">15:00</option>
-                    <option value="" disabled selected hidden>Hora...</option>
                 </select>
-
 
                 <button class="login reqturn" type="submit">Pedir turno</button>
             </form>

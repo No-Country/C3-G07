@@ -7,7 +7,7 @@ const getdatauser = (idUsuario) => {
 
 //Metodo para conseguir todas las especialidades de la clinica
 const getallspecialities = () => {
-    return executeQuery('SELECT nombre_especialidad FROM clinica_oftalmologica.especialidad',[]);
+    return executeQuery('SELECT id_especialidad, nombre_especialidad FROM clinica_oftalmologica.especialidad',[]);
   }
 
 //Metodo para conseguir lista de medicos de la clinica
