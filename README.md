@@ -45,7 +45,8 @@ Figma                                                                           
 [Alejandro Falkenhagen](http://github.com/Afalkenhagen "Alejandro Falkenhagen")
 #### Back-end
    [Mauricio Raul Ferreyra](http://github.com/MauricioRaulFerreyra/MauricioRaulFerreyra "Mauricio Raul Ferreyra")
- [  Isabel Torres](http://github.com/IsabelTT "  Isabel Torres")
+
+   [Isabel Torres](http://github.com/IsabelTT "Isabel Torres")
 ####  Full-stack
    [Victor de la Torre](http://github.com/victordlt "Victor de la Torre")
 
