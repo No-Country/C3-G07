@@ -19,20 +19,8 @@ router.get('/:id', async (req, res, next) => {
 
 /* POST reserva cita. */
 router.post('/validacion', async (req, res, next) => {
-   //const usuario = await loginmodel.validateuser(req.body);
-   const toto=req.body;
-   // const usuario= await reservemodel.getdatauser(req.params.id);
-   // const specialities = await reservemodel.getallspecialities();
-   // const doctors = await reservemodel.getalldoctors();
-   // //res.send(doctors);
-   // const datosunificados={
-   //    "usuariol": usuario,
-   //    "especialidadesl": specialities,
-   //    "doctoresl": doctors
-   // };
-   // //res.send(datosunificados.usuariol);
-   res.send(toto);
-   //res.render('reservaexitosa', {});
+   const rptacita = await reservemodel.newcita(req.body);
+   res.redirect('/reservaexitosa/'+rptacita[0].id);
 });
 
 
