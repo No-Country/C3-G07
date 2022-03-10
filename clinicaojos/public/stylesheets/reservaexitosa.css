@@ -36,6 +36,16 @@
    border: none; 
 }
 
+.boldtxt{
+    font-weight: bold;
+}
+
+.textbtn{
+    text-align: center;
+    text-decoration:none;
+    vertical-align: middle;
+}
+
 body{
     /* background: #45BCD6; */
     /* background: radial-gradient(100% 100% at 50% 0%, #45BCD6 19.27%, rgba(255, 255, 255, 0.2485) 100%); */

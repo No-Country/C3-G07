@@ -10,14 +10,12 @@ router.get('/:id', async (req, res, next) => {
   const pacientecita= await reservaexitosamodel.getdatauser(datoscita[0].cliente_id);
   const dataunified={
     "paciente": pacientecita[0].nombre_paciente,
-    "especialidad": specialities,
-    "doctoresl": doctors,
-    "fecha": fecha,
-    "hora": hora
+    "especialidad": especialidadcita[0].nombre_especialidad,
+    "doctor": medicocita[0].nombre_apellido_medico,
+    "fecha": datoscita[0].fecha_cita.toDateString(),
+    "hora": datoscita[0].horario
  };
-  //res.send({a:datoscita[0].id_cita});
-  //res.send(pacientecita[0]);
-  // res.render('reservaexitosa', dataunified);
+  res.render('reservaexitosa', dataunified);
 });
 
 module.exports = router;

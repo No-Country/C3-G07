@@ -35,9 +35,9 @@
                 <img class="userlogin__logo" loading="lazy" src="/images/userloged.svg" alt="icono login" />
                 
             </a>
-            {{#each usuariol}}
-            <p class="textusuariolog">{{nombre_paciente}}</p>
-            {{/each}}
+            
+            <p class="textusuariolog">{{paciente}}</p>
+            
             </div>
         </div>
     </header>
@@ -47,19 +47,20 @@
             <div>
                 <h1 class="tituloreserva">!Su turno ha sido reservado con éxito!</h1>
 
-                <label>Profesional: </label>
-                <input class="rptaturno" value="toto" disabled >
+                <label class="boldtxt">Profesional:</label> {{doctor}}
+                {{!-- <input class="rptaturno" value={{doctor}} disabled > --}}
                 <br><br>
-                <label>Especialidad: </label>
-                <input class="rptaturno" value="toto" disabled >
+                <label class="boldtxt">Especialidad:</label> {{especialidad}}
+                {{!-- <input class="rptaturno" value="toto" disabled > --}}
                 <br><br>
-                <label>Fecha: </label>
-                <input class="rptaturno" value="toto" disabled >
+                <label class="boldtxt">Fecha:</label> {{fecha}}
+                {{!-- <input class="rptaturno" value="toto" disabled > --}}
                 <br><br>
-                <label>Hora: </label>
-                <input class="rptaturno" value="toto" disabled >
-
-                <button class="login reqturn" type="submit">volver a home</button>
+                <label class="boldtxt">Hora:</label> {{hora}}
+                {{!-- <input class="rptaturno" value="toto" disabled > --}}
+                <br><br>
+                <a class="login reqturn textbtn " type="button" href="/">volver a home</a>
+                
             </div>
         </div>
     </div>
