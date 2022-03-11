@@ -4,8 +4,8 @@ const indexmodel=require('../Models/index_model');
 
 
 /* GET home page. .*/
-router.get('/',  (req, res, next) => {
-  const specialities =  indexmodel.getallspecialities();
+router.get('/', async (req, res, next) => {
+  const specialities =  await indexmodel.getallspecialities();
   res.render('index', {especialidad:specialities});
 });
 
